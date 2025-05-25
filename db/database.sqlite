@@ -1,1 +1,18 @@
--- database.sqlite--
+-- Πίνακας έργων
+CREATE TABLE artworks (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    description TEXT,
+    price REAL,
+    image TEXT
+);
+
+-- Πίνακας παραγγελιών
+CREATE TABLE orders (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    customer_name TEXT,
+    customer_email TEXT,
+    items TEXT,
+    total REAL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

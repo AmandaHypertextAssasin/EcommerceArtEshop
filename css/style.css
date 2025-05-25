@@ -1,2 +1,58 @@
+/* Στυλ για το eShop */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
---style.css--
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 20px;
+    }
+
+main {
+    padding: 20px;
+}
+
+#artworks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.artwork {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+    .artwork img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
