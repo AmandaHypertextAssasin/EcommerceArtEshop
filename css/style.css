@@ -1,58 +1,46 @@
-/* Στυλ για το eShop */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-    header nav a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 20px;
-    }
-
-main {
-    padding: 20px;
-}
-
-#artworks {
+/* Admin panel */
+.admin-panel {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.artwork {
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px;
+.form-section, .list-section {
+    background: #f9f9f9;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    text-align: center;
 }
 
-    .artwork img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+form input, form button {
     padding: 10px;
-    position: fixed;
+    margin: 5px 0;
     width: 100%;
-    bottom: 0;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.admin-view .artwork {
+    position: relative;
+}
+
+.admin-view button {
+    margin: 5px 2px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
 }

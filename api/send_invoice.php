@@ -21,6 +21,14 @@ if (!$order) {
     exit;
 }
 
+//debugging log
+if (!$order) {
+    error_log("Order not found: ID {$data['order_id']}");
+    http_response_code(404);
+    echo json_encode(["error" => "Order not found"]);
+    exit;
+}
+
 // Δημιουργία παραστατικού
 $invoice = [
     "customer" => [
@@ -41,6 +49,8 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Content-Type: application/json',
     'Authorization: Bearer YOUR_API_TOKEN'
 ]);
+
+
 $response = curl_exec($ch);
 curl_close($ch);
 

@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cmd = shell_exec("curl -X POST -H 'Content-Type: application/json' -d '{\"order_id\":$order_id}' http://localhost/api/send_invoice.php");
 
     echo "Η παραγγελία καταχωρήθηκε και το παραστατικό στάλθηκε!";
-}--->
+}--//->
 
 <!DOCTYPE html>
 <html lang="el">

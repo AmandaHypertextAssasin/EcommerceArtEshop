@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amanda's Art eShop</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
 </head>
 <body>
     <header>
         <h1>eShop Ζωγραφικών Έργων</h1>
         <nav>
-            <a href="cart.html">Το καλάθι μου (0)</a>
+            <a href="cart.html">🛒 Το καλάθι μου (<span id="cart-count">0</span>)</a>
         </nav>
     </header>
 
     <main>
-        <section id="artworks">
-            <!-- Τα έργα θα προστεθούν εδώ μέσω JavaScript -->
+        <section id="artworks" class="artwork-grid">
+            <!-- Τα έργα θα φορτωθούν εδώ δυναμικά -->
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Amanda's Art eShop </p>
+        <p>&copy; 2025 Amanda's Art eShop</p>
     </footer>
 
     <script src="js/cart.js"></script>
+    <script src="js/artworks.js"></script> <!-- Προσθέτουμε νέο script -->
 </body>
 </html>
+
